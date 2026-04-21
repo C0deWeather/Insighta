@@ -1,0 +1,26 @@
+[project]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "C0deWeather",email = "bflloyd1653@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.136.0,<0.137.0)",
+    "uvicorn (>=0.45.0,<0.46.0)",
+    "pydantic-settings (>=2.14.0,<3.0.0)",
+    "aiomysql (>=0.3.2,<0.4.0)",
+    "cryptography (>=46.0.7,<47.0.0)"
+]
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.3,<10.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
