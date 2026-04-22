@@ -4,7 +4,7 @@ from datetime import datetime
 from uuid import UUID
 
 
-class DemographicData(BaseModel):
+class Profile(BaseModel):
     id: UUID
     
     @field_validator("id")
@@ -34,5 +34,5 @@ class SuccessResponse(BaseModel):
     page: int
     limit: int
     total: int
-    data: DemographicData
+    data: Profile
     
